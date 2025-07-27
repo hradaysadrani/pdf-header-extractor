@@ -211,6 +211,7 @@ This can happen if:
 ```
 pdf-header-extractor/
 ├── process_pdfs.py     # Main extraction script
+├── outline_extractor.py     # This script is under testing. It has some upcoming features but presently, not as accurate as main sript
 ├── Dockerfile          # Container configuration
 ├── README.md           # This file
 ├── input/              # Put PDF files here
