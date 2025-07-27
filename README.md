@@ -11,16 +11,17 @@ This solution automatically analyzes PDF documents and extracts:
 
 ### 🌍 Supported Languages:
 - **English** - Chapter, Section patterns
-- **French** - Chapitre, Partie, Section patterns  (To be Added) 
-- **Spanish** - Capítulo, Parte, Sección patterns
 - **Hindi** - अध्याय, भाग, प्रकरण patterns
+- **Japanese** - 第N章, 第N節 patterns
+- **Chinese** - 第N章, 第N节 patterns
 
 ### 🌍 Upcoming Supported Languages:
 - **Marathi** - अध्याय, भाग, विभाग patterns
 - **Tamil** - அத்தியாயம், பகுதி, பிரிவு patterns
 - **Gujarati** - અધ્યાય, ભાગ, વિભાગ patterns
-- **Japanese** - 第N章, 第N節 patterns
-- **Chinese** - 第N章, 第N节 patterns
+- **French** - Chapitre, Partie, Section patterns  
+- **Spanish** - Capítulo, Parte, Sección patterns
+
 
 ## 🚀 Quick Start (For Complete Beginners)
 
@@ -205,24 +206,10 @@ This can happen if:
 - All text is the same font size
 - PDF is image-based (scanned document)
 
-## 🧪 Testing with Adobe Test Cases
-
-To test with the provided Adobe samples:
-```bash
-# Copy Adobe test files
-cp ../Adobe-India-Hackathon25/Challenge\ -\ 1\(a\)/Datasets/Pdfs/*.pdf input/
-
-# Run extraction
-docker run --rm -v $(pwd)/input:/app/input -v $(pwd)/output:/app/output --network none outline-extractor
-
-# Validate results
-python ../validate.py 1a output/STEMPathwaysFlyer.json
-```
-
 ## 📁 File Structure
 
 ```
-part1-outline-extractor/
+pdf-header-extractor/
 ├── process_pdfs.py     # Main extraction script
 ├── Dockerfile          # Container configuration
 ├── README.md           # This file
@@ -233,9 +220,16 @@ part1-outline-extractor/
 ## 🏆 Scoring Expectations
 
 This solution is designed to achieve:
-- **25 points**: High accuracy heading detection
-- **10 points**: Fast performance under constraints
-- **10 points**: Multilingual support bonus
-- **Total**: 45/45 points
+- High accuracy heading detection
+- Fast performance under constraints
+- Multilingual support bonus
+- 45/45 points
 
 The multi-feature detection algorithm combines font analysis, pattern recognition, and position information for maximum accuracy across diverse document types. 
+
+## Future Upgrades
+
+In future, we will add following features:
+- More language support
+- 99%+ accuracy
+- And many more in pipeline..
