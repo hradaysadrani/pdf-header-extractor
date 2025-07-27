@@ -52,7 +52,7 @@ sudo systemctl start docker
 
 Your folder structure should look like:
 ```
-part1-outline-extractor/
+pdf-header-extractor/
 ├── input/           ← Put your PDF files here
 │   ├── document1.pdf
 │   └── document2.pdf
