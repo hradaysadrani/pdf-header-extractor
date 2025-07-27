@@ -15,13 +15,13 @@ This solution automatically analyzes PDF documents and extracts:
 - **Japanese** - 第N章, 第N節 patterns
 - **Chinese** - 第N章, 第N节 patterns
 
-### 🌍 Upcoming Supported Languages:
+### 🌍 Languages which will be supported in future:
 - **Marathi** - अध्याय, भाग, विभाग patterns
 - **Tamil** - அத்தியாயம், பகுதி, பிரிவு patterns
 - **Gujarati** - અધ્યાય, ભાગ, વિભાગ patterns
 - **French** - Chapitre, Partie, Section patterns  
 - **Spanish** - Capítulo, Parte, Sección patterns
-
+- And many more to come..
 
 ## 🚀 Quick Start (For Complete Beginners)
 
