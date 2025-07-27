@@ -217,14 +217,6 @@ pdf-header-extractor/
 └── output/             # Results appear here
 ```
 
-## 🏆 Scoring Expectations
-
-This solution is designed to achieve:
-- High accuracy heading detection
-- Fast performance under constraints
-- Multilingual support bonus
-- 45/45 points
-
 The multi-feature detection algorithm combines font analysis, pattern recognition, and position information for maximum accuracy across diverse document types. 
 
 ## Future Upgrades
