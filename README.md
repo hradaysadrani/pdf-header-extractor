@@ -2,6 +2,18 @@
 
 Extract document structure (title and H1, H2, H3 headings) from PDF files with blazing speed and comprehensive multilingual support.
 
+## 📁 File Structure
+
+```
+pdf-header-extractor/
+├── process_pdfs.py     # Main extraction script
+├── outline_extractor.py     # This script is under testing. It has some upcoming features but presently, not as accurate as main sript
+├── Dockerfile          # Container configuration
+├── README.md           # This file
+├── input/              # Put PDF files here
+└── output/             # Results appear here
+```
+
 ## 🎯 What This Does
 
 This solution automatically analyzes PDF documents and extracts:
@@ -205,18 +217,6 @@ This can happen if:
 - Document has no clear heading structure
 - All text is the same font size
 - PDF is image-based (scanned document)
-
-## 📁 File Structure
-
-```
-pdf-header-extractor/
-├── process_pdfs.py     # Main extraction script
-├── outline_extractor.py     # This script is under testing. It has some upcoming features but presently, not as accurate as main sript
-├── Dockerfile          # Container configuration
-├── README.md           # This file
-├── input/              # Put PDF files here
-└── output/             # Results appear here
-```
 
 The multi-feature detection algorithm combines font analysis, pattern recognition, and position information for maximum accuracy across diverse document types. 
 
